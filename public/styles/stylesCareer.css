@@ -1,0 +1,126 @@
+body{
+  margin: 0;
+  background-color: #16161d;
+  color: white;
+}
+
+/* Start Navigation */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgba(73, 53, 122,.99);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #fffff0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 16.66%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #DDE1F9;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #ffbd59;
+    color: black;
+    font-size: 1.5rem;
+}
+.highlight{
+  color: #FBA90A;
+}
+
+/* End top Navigation */
+
+* {box-sizing: border-box;}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: blank;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: content;
+  background-color: #fffff0;
+}
+.item5 {
+  grid-area: blank2;
+
+}
+.item6 {
+  grid-area: subtile;
+
+}
+
+
+.grid{
+  display: grid;
+  grid-template-areas:
+    'blank header header blank2'
+    'blank main main blank2'
+    'blank subtile subtile blank2'
+    'blank content content blank2';
+  grid-gap: 0px;
+  grid-template-columns: 1fr 10fr 10fr 1fr;
+  grid-template-rows: 5rem 5rem 5rem 20rem;
+}
+.title{
+  font-size: 4rem;
+  margin-bottom: 0px;
+  margin-top: .5rem;
+}
+.subtitle{
+  font-size: 2rem;
+  margin-top: 0px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #fffff0;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.5rem;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: #fffff0;
+  color: black;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.logo{
+  width: 32px;
+  height: 22px;
+}

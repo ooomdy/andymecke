@@ -1,0 +1,149 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Start Navigation */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgba(212, 218, 247,.75);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #342609;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 16.66%;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #DDE1F9;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #DDE1F9;
+    color: #FBA90A;
+    font-size: 1.5rem;
+}
+.highlight{
+  color: #FBA90A;
+}
+
+/* End top Navigation */
+
+* {box-sizing: border-box;}
+
+
+.item1 {
+  grid-area: header;
+  display: block;
+}
+.item2 {
+  grid-area: blank;
+}
+.item3 {
+  grid-area: main;
+  background-color: rgba(212, 218, 247,.75);
+  border-radius: 50%;
+
+}
+.Avatar{
+  
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+.item4 {
+  grid-area: right;
+  background-color: #FBA90A;
+}
+.item5 {
+  grid-area: blank2;
+
+}
+.item6{
+  grid-area: footer;
+  background-color: brown;
+}
+
+
+.grid{
+  display: grid;
+  grid-template-areas:
+    'blank header header blank2'
+    'blank main right blank2'
+    'blank footer footer blank2';
+  grid-gap: 0px;
+  grid-template-columns: 1fr 20rem 6fr 1fr;
+  grid-template-rows: 5rem 20rem 20rem;
+}
+
+/* .grid div:nth-child(1){
+  grid-column: 1 / -1;
+  grid-row: 1;
+  background-image: url(/images/Beach.png);
+  display: block;
+} */
+
+.hero-text{
+  color: #341C09;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  font-weight: 300;
+	margin: 0;
+	font-size: 2.4rem;
+  width: 100%;
+}
+
+/* .bio-text {
+ background-color: #341C09;
+} */
+.bio-content{
+  background-color: white;
+  padding: 2rem;
+}
+
+.green{
+  background-color: green;
+
+}
+
+.blue{
+  background-color: blue;
+}

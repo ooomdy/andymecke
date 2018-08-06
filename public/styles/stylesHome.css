@@ -1,0 +1,105 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  background-color: #16161d;
+}
+
+/* Start Navigation */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgba(74, 73, 73,.95);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #FDDC22;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 16.66%;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: grey;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: grey;
+    color: #FDDC22;
+    font-size: 1.5rem;
+}
+.highlight{
+  color: #FBA90A;
+}
+
+/* End top Navigation */
+
+* {box-sizing: border-box;}
+
+
+.body-text{
+  margin-left: 4rem;
+
+}
+
+.text-top{
+  color: #FDDC22;
+  margin-top: 4rem;
+  margin-bottom: 0px;
+  font-size: 5rem;
+  padding-top: 0px;
+}
+
+.text{
+  color: #340913;
+  font-size: 2rem;
+  padding-top: 0px;
+  margin: 2.5rem;
+  margin-left: 0px;
+
+
+}
+
+.theYellow{
+  color: #FDDC22;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: left;
+  background-color: white;
+  border-radius: 10px;
+}
+.item3 {
+  grid-area: right;
+}
+
+.grid{
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'left left right'
+    'left left right';
+  grid-gap: 0px;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 2rem 20rem 10rem;
+  grid-gap: 2rem;
+  padding-left: 3rem;
+}
